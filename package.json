@@ -1,0 +1,35 @@
+{
+  "name": "leveluptuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "jquery": "^1.9.1",
+    "mq4-hover-shim": "^0.3.0",
+    "popper.js": "^1.12.9",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "rimraf": "^2.6.2",
+    "vinyl-paths": "^2.1.0"
+  }
+}
