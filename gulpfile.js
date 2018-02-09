@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     del = require('del'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     watch = require('gulp-watch'),
     browserSync = require('browser-sync').create();
@@ -40,6 +41,7 @@ gulp.task('js', function(){
 var sass_files = ['./src/scss/theme.scss', './src/scss/custom.sass']
 gulp.task('sass', function(){
   return gulp.src(sass_files)
+    .pipe(sourcemaps.init())
     .pipe(sass(
             {
               errLogToconsole: true,
