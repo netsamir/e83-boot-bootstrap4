@@ -1,0 +1,52 @@
+doctype
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1 shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name="description" content="")
+    meta(name="author" content="")
+
+    link(rel="icon" href="images/favicon.ico")
+
+    title Starter Template
+
+    // PUT THIRD PARTY STATIC CSS HERE
+    //
+    //
+
+    // USER CSS BASED ON BOOTSTRAP4
+    link(rel="stylesheet", type="text/css", href="css/theme.min.css")
+    link(rel="stylesheet", type="text/css", href="css/custom.min.css")
+
+  body
+    include partials/_header.html
+    block main
+
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="vendors/js/jquery.min.js"><\\/script>')
+    script(type="text/javascript", src="vendors/js/popper.min.js")
+    script(type="text/javascript", src="vendors/js/bootstrap.min.js")
+
+    // THIRD PARTY STATIC JS HERE
+    //
+    //
+
+    // USER JS
+    script(type="text/javascript", src="js/app.min.js")
+    script.
+      jQuery(document).ready(function() {
+        // Testing
+        App.init();
+        App.initHello();
+      });
+
+    // Google Analytics: change UA-XXXXX-Y to be your site's ID.
+    script.
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    script(src='https://www.google-analytics.com/analytics.js', async='', defer='')
